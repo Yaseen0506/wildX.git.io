@@ -1,0 +1,338 @@
+@font-face {
+    font-family: abberancy;
+    src: url(/font/abberancy.ttf);
+  }
+  
+  
+body
+{
+    margin: 0;
+    padding: 0;
+    background-color: #CFDBD5;
+    font-family:"Space Grotesk",sans-serif ;
+}
+
+
+
+.header
+{
+    background-color:#242423;
+    color: #ffff;
+    display: flex;
+    padding: 30px;
+    flex-direction: column;
+    justify-content:space-around;
+}
+
+.header-top
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.title-logo
+{
+    align-self: center;
+    font-size: 150px;
+    font-family: "Climate Crisis",sans-serif;
+    letter-spacing: 5px;
+    transition: all 0.25s;
+}
+
+
+
+.title-logo:hover
+{
+    transform: scale(1.2);
+    text-shadow: 0 0 10px #9ef01a;
+}
+
+.desc-title
+{
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+    letter-spacing: 3px;
+    color: #38b000;
+    margin-bottom: 0;
+}
+
+section
+{
+    padding: 30px 60px;
+}
+
+.desc p
+{
+    width: 60%;
+    margin: 40px 0;
+    line-height: 1.5;
+}
+
+.img-container img
+{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 30px;
+    transition: all 0.25s;
+    min-width: 300px;
+}
+
+.img-container img:hover
+{
+    transform:scale(0.8);
+    box-shadow:2px 2px 20px #000;
+}
+
+.img-container
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 0 50px;
+    margin-top: 40px;
+}
+
+
+
+
+
+.card
+{
+    background-color: #c0d0c8;
+    margin: 20px;
+    border-radius: 20px;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* min-width: 250px; */
+}
+
+.card-inner
+{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+    gap: 50px;
+    flex-basis: 50%;
+}
+
+.card p
+{
+    margin: 0;
+    font-weight: 600;
+}
+
+.card span
+{
+    font-size: 13px;
+}
+
+.card:hover
+{
+    transform:translateY(-10px);
+    box-shadow: 0px 0px 2px #000;
+}
+
+.revolution
+{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.pencil
+{
+    font-size: 5rem;
+}
+
+.revolution h2
+{
+    font-size: 3rem;
+}
+
+.revolution p
+{
+    font-size: 2.5rem;
+}
+
+footer 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.rev-title
+{
+    color: #38b000;
+}
+
+
+
+footer div
+{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+footer a
+{
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+}
+
+footer p
+{
+    margin: 0;
+}
+
+
+@media  (max-width:900px) {
+    .title-logo
+    {
+        font-size: 90px;
+    }
+
+    .pencil
+    {
+        font-size: 3rem;
+    }
+
+    .revolution h2 
+    {
+        font-size: 2rem;
+    }
+
+    .revolution p 
+    {
+        font-size: 1.5rem;
+    }
+    
+}
+
+@media  (max-width:790px)
+{
+    .img-container
+    {
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(4,1fr);
+    }
+
+
+    .desc p 
+    {
+        width: 80%;
+    }
+}
+
+@media  (max-width:560px)
+{
+    .title-logo
+    {
+        font-size: 75px;
+    }
+
+    section 
+    {
+        padding: 30px 25px;
+    }
+
+    .img-container
+    {
+        padding: 0 5px;
+    }
+
+    .desc p 
+    {
+        font-size: 20px;
+    }
+    .card span 
+    {
+        font-size: 10px;
+    }
+
+}
+
+@media  (max-width:500px)
+{
+    .title-logo
+    {
+        font-size: 60px;
+    }
+
+    .desc p 
+    {
+        width: 100%;
+    }
+
+    .card p 
+    {
+        font-size: 14px;
+    }
+}
+
+@media  (max-width:400px)
+{
+    .title-logo
+    {
+        font-size: 45px;
+    }
+
+    .header-top
+    {
+        font-size: 10px;
+    }
+
+    
+
+    section 
+    {
+        padding: 10px 20px;
+    }
+
+    .desc
+    {
+        margin-top: 0;
+    }
+
+    .desc-title
+    {
+        font-size: 25px;
+    }
+
+    .pencil
+    {
+        font-size: 2rem;
+    }
+
+    .revolution h2 
+    {
+        font-size: 1.5rem;
+    }
+
+    .revolution p 
+    {
+        font-size: 1rem;
+    }
+
+    .card span 
+    {
+        font-size: 8px;
+    }
+
+}
+
+
+
+
