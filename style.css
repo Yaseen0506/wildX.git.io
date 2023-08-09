@@ -16,7 +16,9 @@ body
 
 .header
 {
-    background-color:#242423;
+    /* background-color:#242423; */
+    background: url("./images/photo-1518770660439-4636190af475.avif") no-repeat ;
+    background-size: cover;
     color: #ffff;
     display: flex;
     padding: 30px;
