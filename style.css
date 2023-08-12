@@ -101,9 +101,12 @@ section
 
 
 
-
-
 .card
+{
+    background-color: #c0d0c8;
+}
+
+.box
 {
     background-color: #c0d0c8;
     margin: 20px;
@@ -124,18 +127,18 @@ section
     flex-basis: 50%;
 }
 
-.card p
+.box p
 {
     margin: 0;
     font-weight: 600;
 }
 
-.card span
+.box span
 {
     font-size: 13px;
 }
 
-.card:hover
+.box:hover
 {
     transform:translateY(-10px);
     box-shadow: 0px 0px 2px #000;
@@ -259,7 +262,7 @@ footer p
     {
         font-size: 20px;
     }
-    .card span 
+    .box span 
     {
         font-size: 10px;
     }
@@ -278,7 +281,7 @@ footer p
         width: 100%;
     }
 
-    .card p 
+    .box p 
     {
         font-size: 14px;
     }
@@ -328,7 +331,7 @@ footer p
         font-size: 1rem;
     }
 
-    .card span 
+    .box span 
     {
         font-size: 8px;
     }
