@@ -258,6 +258,11 @@ footer p
     {
         font-size: 14px;
     }
+
+    .desc-title
+    {
+        font-size: 30px;
+    }
 }
 
 @media  (max-width:400px)
